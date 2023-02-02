@@ -1,0 +1,19 @@
+{
+    "name": "volodymyr-klymniuk/tests-bundle",
+    "description": "Extra functionality for work with Symfony functional tests",
+    "type": "library",
+    "license": "MIT-advertising",
+    "autoload": {
+        "psr-4": {
+            "VolodymyrKlymniuk\\TestsBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Volodymyr Klymniuk",
+            "email": "Volodymyr.Klymniuk@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
