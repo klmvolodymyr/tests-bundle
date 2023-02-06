@@ -4,9 +4,6 @@
 
 trait FixturesTrait
 {
-    /**
-     * @inheritdoc
-     */
     public function load(array $files, $append = false)
     {
         $fixtureFiles = [];
@@ -19,11 +16,6 @@ trait FixturesTrait
         return $loader->load($fixtureFiles);
     }
 
-    /**
-     * @param string $path
-     *
-     * @return string
-     */
     protected function doLocateFiles(string $path): string
     {
         $path = sprintf('%s/%s', 'tests/DataFixtures', $path);
