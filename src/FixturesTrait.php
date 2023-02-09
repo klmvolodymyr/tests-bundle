@@ -1,9 +1,8 @@
 <?php
 
-//namespace VolodymyrKlymniuk\TestsBundle;
+namespace VolodymyrKlymniuk\TestsBundle;
 
-trait FixturesTrait
-{
+trait FixturesTrait {
     public function load(array $files, $append = false)
     {
         $fixtureFiles = [];
