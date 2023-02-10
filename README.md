@@ -3,16 +3,16 @@
 ## Installations
 Add to composer.json:
 ````
-"require-dev": {
-    "volodymyr-klymniuk/sf-functional-test": "dev-master"
-},
+    "require-dev": {
+        "volodymyr-klymniuk/sf-functional-test": "dev-master"
+    },
 ````
 or if you run composer install without dev, but you must run phpunit to section "required"
 
 ## Load environment variables from files
 Add to your phpunit.xml listener and configure arguments(relative file paths from your phpunit.xml configuration file):
 ````XML 
-<listener class="TestsBundle\PHPUnit\Listener\EnvLoader">
+<listener class="VolodymyrKlymniukёTestsBundle\PHPUnit\Listener\EnvLoader">
     <arguments>
         <array>
             <element key="0">
@@ -30,7 +30,7 @@ Add to your phpunit.xml listener and configure arguments(relative file paths fro
 Add to your phpunit.xml Listener:
 ````    
 <listeners>
-    <listener class="TestsBundle\PHPUnit\Listener\FixtureLoader" />
+    <listener class="VolodymyrKlymniukёTestsBundle\PHPUnit\Listener\FixtureLoader" />
     <arguments>
         <array>
             <element key="--fixtures">
@@ -44,7 +44,7 @@ Add to your phpunit.xml Listener:
 ## Run Doctrine migrations before test cases
 Add to your phpunit.xml Listener:
 ````    
-<listener class="TestsBundle\PHPUnit\Listener\MigrationLauncher">
+<listener class="VolodymyrKlymniukёTestsBundle\PHPUnit\Listener\MigrationLauncher">
 </listener>
 ````
 
